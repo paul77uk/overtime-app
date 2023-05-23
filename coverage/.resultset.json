@@ -674,8 +674,93 @@
           1,
           null
         ]
+      },
+      "/home/paul/Overtime/spec/models/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/paul/Overtime/spec/requests/posts_spec.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/paul/Overtime/spec/system/post_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/paul/Overtime/spec/system/static_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/paul/Overtime/app/controllers/posts_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/paul/Overtime/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/paul/Overtime/app/controllers/static_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1684860056
+    "timestamp": 1684860600
   }
 }
