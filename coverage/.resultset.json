@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/paul/Overtime/spec/models/user_spec.rb": {
+      "/home/paul/Overtime/spec/models/post_spec.rb": {
         "lines": [
           1,
           null,
@@ -9,7 +9,6 @@
           1,
           1,
           2,
-          null,
           null,
           1,
           1,
@@ -607,6 +606,16 @@
           null
         ]
       },
+      "/home/paul/Overtime/spec/factories/posts.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/home/paul/Overtime/spec/factories/users.rb": {
         "lines": [
           1,
@@ -618,6 +627,7 @@
       },
       "/home/paul/Overtime/config/routes.rb": {
         "lines": [
+          1,
           1,
           1,
           null,
@@ -652,35 +662,20 @@
           null
         ]
       },
-      "/home/paul/Overtime/spec/system/static_spec.rb": {
+      "/home/paul/Overtime/app/helpers/posts_helper.rb": {
         "lines": [
           1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
           null
         ]
       },
-      "/home/paul/Overtime/app/controllers/static_controller.rb": {
+      "/home/paul/Overtime/app/models/post.rb": {
         "lines": [
           1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/home/paul/Overtime/app/controllers/application_controller.rb": {
-        "lines": [
           1,
           null
         ]
       }
     },
-    "timestamp": 1684858471
+    "timestamp": 1684860056
   }
 }
