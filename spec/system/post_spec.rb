@@ -20,6 +20,14 @@ describe 'navigate' do
     end
   end
 
+  describe 'new' do
+    it 'has a link from the homepage' do
+      visit root_path
+      click_on("new_post_from_nav")
+      expect(page).to have_content('New')
+    end
+  end
+
   describe 'creation' do
     before do
       visit new_post_path
