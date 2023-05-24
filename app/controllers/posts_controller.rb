@@ -1,6 +1,8 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show]
-  def index; end
+  before_action :set_post, only: %i[show edit update]
+  def index
+    @posts = Post.all
+  end
 
   def new
     @post = Post.new
@@ -14,6 +16,16 @@ class PostsController < ApplicationController
       redirect_to @post, notice: 'Post was successfully created'
     else
       render new, status: :unprocessable_entity
+    end
+  end
+
+  def edit; end
+
+  def update
+    if @post.update(post_params)
+      redirect_to @post, notice: 'Post was successfully updated'
+    else
+      render :edit
     end
   end
 
