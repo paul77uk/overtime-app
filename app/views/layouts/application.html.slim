@@ -11,6 +11,9 @@ html
     = javascript_importmap_tags
   body.flex.justify-center.mx-auto.mt-3
     main
+      div.flex.items-center.justify-center.text-center = flash_messages
       div.text-3xl.font-semibold Time Tracker
       div.flex.justify-center.mx-auto = render 'shared/nav'
       = yield
+      
+      

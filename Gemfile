@@ -42,10 +42,10 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
 
+gem 'devise', '~> 4.9', '>= 4.9.2'
 gem 'html2slim', '~> 0.2.0'
 gem 'slim-rails', '~> 3.6', '>= 3.6.2'
 gem 'tailwindcss-rails'
-gem 'devise', '~> 4.9', '>= 4.9.2'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -74,3 +74,5 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
+
+gem "inline_svg", "~> 1.9"
