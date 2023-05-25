@@ -23,8 +23,18 @@ describe 'navigate' do
   describe 'new' do
     it 'has a link from the homepage' do
       visit root_path
-      click_on("new_post_from_nav")
+      click_link('new_post_from_nav')
       expect(page).to have_content('New')
+    end
+  end
+
+  describe 'delete' do
+    it 'can be deleted' do
+      @post = FactoryBot.create(:post)
+      visit posts_path
+      click_button("delete_post_#{@post.id}_from_index")
+      accept_alert
+      expect(page).not_to have_content(@post.rationale)
     end
   end
 

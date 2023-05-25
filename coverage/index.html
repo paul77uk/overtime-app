@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-05-24T23:55:54+01:00">2023-05-24T23:55:54+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-05-25T01:55:52+01:00">2023-05-25T01:55:52+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  98.57%
+  98.64%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.92
+         2.0
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>210</b> relevant lines,
-    <span class="green"><b>207</b> lines covered</span> and
+    <b>220</b> relevant lines,
+    <span class="green"><b>217</b> lines covered</span> and
     <span class="red"><b>3</b> lines missed. </span>
     (<span class="green">
-  98.57%
+  98.64%
 </span>
 )
   </div>
@@ -83,12 +83,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#39f769030d964f4dc3333414cca59d7542ff6119" class="src_link" title="app/controllers/posts_controller.rb">app/controllers/posts_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">91.30 %</td>
-            <td class="cell--number">43</td>
-            <td class="cell--number">23</td>
-            <td class="cell--number">21</td>
+            <td class="green strong cell--number t-file__coverage">92.31 %</td>
+            <td class="cell--number">48</td>
+            <td class="cell--number">26</td>
+            <td class="cell--number">24</td>
             <td class="cell--number">2</td>
-            <td class="cell--number">1.61</td>
+            <td class="cell--number">1.65</td>
             
           </tr>
         
@@ -110,7 +110,7 @@
             <td class="cell--number">3</td>
             <td class="cell--number">3</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">14.67</td>
+            <td class="cell--number">16.67</td>
             
           </tr>
         
@@ -286,7 +286,7 @@
             <td class="cell--number">9</td>
             <td class="cell--number">9</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.33</td>
+            <td class="cell--number">2.56</td>
             
           </tr>
         
@@ -297,7 +297,7 @@
             <td class="cell--number">15</td>
             <td class="cell--number">15</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">8.13</td>
+            <td class="cell--number">8.93</td>
             
           </tr>
         
@@ -337,11 +337,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#b618ccadbab571b3f248b04b60c78733c75bbb94" class="src_link" title="spec/system/post_spec.rb">spec/system/post_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">77</td>
-            <td class="cell--number">46</td>
-            <td class="cell--number">46</td>
+            <td class="cell--number">87</td>
+            <td class="cell--number">53</td>
+            <td class="cell--number">53</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.39</td>
+            <td class="cell--number">1.38</td>
             
           </tr>
         
@@ -442,7 +442,7 @@
     <h3>app/controllers/posts_controller.rb</h3>
     <h4>
       <span class="green">
-  91.3%
+  92.31%
 </span>
 
       lines covered
@@ -451,8 +451,8 @@
     
 
     <div class="t-line-summary">
-      <b>23</b> relevant lines.
-      <span class="green"><b>21</b> lines covered</span> and
+      <b>26</b> relevant lines.
+      <span class="green"><b>24</b> lines covered</span> and
       <span class="red"><b>2</b> lines missed.</span>
     </div>
 
@@ -481,7 +481,7 @@
 
             
 
-            <code class="ruby">  before_action :set_post, only: %i[show edit update]</code>
+            <code class="ruby">  before_action :set_post, only: %i[show edit update destroy]</code>
           </li>
         </div>
       
@@ -497,8 +497,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="4">
-            <span class="hits">3</span>
+          <li class="covered" data-hits="5" data-linenumber="4">
+            <span class="hits">5</span>
             
 
             
@@ -833,18 +833,18 @@
 
             
 
-            <code class="ruby">  private</code>
+            <code class="ruby">  def destroy</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="35">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="35">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">    @post.delete</code>
           </li>
         </div>
       
@@ -855,18 +855,18 @@
 
             
 
-            <code class="ruby">  def post_params</code>
+            <code class="ruby">    redirect_to posts_path, notice: &#39;Post was successfully deleted&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="37">
-            <span class="hits">3</span>
+          <li class="never" data-hits="" data-linenumber="37">
+            
             
 
             
 
-            <code class="ruby">    params.require(:post).permit(:date, :rationale)</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -877,12 +877,23 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="39">
+          <li class="covered" data-hits="1" data-linenumber="39">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="40">
             
             
 
@@ -893,29 +904,29 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="40">
+          <li class="covered" data-hits="1" data-linenumber="41">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  def set_post</code>
+            <code class="ruby">  def post_params</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="41">
-            <span class="hits">6</span>
+          <li class="covered" data-hits="3" data-linenumber="42">
+            <span class="hits">3</span>
             
 
             
 
-            <code class="ruby">    @post = Post.find(params[:id])</code>
+            <code class="ruby">    params.require(:post).permit(:date, :rationale)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="42">
+          <li class="never" data-hits="" data-linenumber="43">
             
             
 
@@ -926,7 +937,51 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="43">
+          <li class="never" data-hits="" data-linenumber="44">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="45">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def set_post</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="46">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @post = Post.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="47">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="48">
             
             
 
@@ -1065,8 +1120,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="42" data-linenumber="3">
-            <span class="hits">42</span>
+          <li class="covered" data-hits="48" data-linenumber="3">
+            <span class="hits">48</span>
             
 
             
@@ -7182,8 +7237,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="3">
-            <span class="hits">6</span>
+          <li class="covered" data-hits="7" data-linenumber="3">
+            <span class="hits">7</span>
             
 
             
@@ -7193,8 +7248,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="4">
-            <span class="hits">6</span>
+          <li class="covered" data-hits="7" data-linenumber="4">
+            <span class="hits">7</span>
             
 
             
@@ -7356,8 +7411,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="18" data-linenumber="3">
-            <span class="hits">18</span>
+          <li class="covered" data-hits="20" data-linenumber="3">
+            <span class="hits">20</span>
             
 
             
@@ -7400,8 +7455,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="19" data-linenumber="7">
-            <span class="hits">19</span>
+          <li class="covered" data-hits="21" data-linenumber="7">
+            <span class="hits">21</span>
             
 
             
@@ -7411,8 +7466,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="19" data-linenumber="8">
-            <span class="hits">19</span>
+          <li class="covered" data-hits="21" data-linenumber="8">
+            <span class="hits">21</span>
             
 
             
@@ -7422,8 +7477,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="19" data-linenumber="9">
-            <span class="hits">19</span>
+          <li class="covered" data-hits="21" data-linenumber="9">
+            <span class="hits">21</span>
             
 
             
@@ -7433,8 +7488,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="19" data-linenumber="10">
-            <span class="hits">19</span>
+          <li class="covered" data-hits="21" data-linenumber="10">
+            <span class="hits">21</span>
             
 
             
@@ -7444,8 +7499,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="19" data-linenumber="11">
-            <span class="hits">19</span>
+          <li class="covered" data-hits="21" data-linenumber="11">
+            <span class="hits">21</span>
             
 
             
@@ -8886,8 +8941,8 @@
     
 
     <div class="t-line-summary">
-      <b>46</b> relevant lines.
-      <span class="green"><b>46</b> lines covered</span> and
+      <b>53</b> relevant lines.
+      <span class="green"><b>53</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -8943,8 +8998,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="8" data-linenumber="5">
-            <span class="hits">8</span>
+          <li class="covered" data-hits="9" data-linenumber="5">
+            <span class="hits">9</span>
             
 
             
@@ -8954,8 +9009,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="8" data-linenumber="6">
-            <span class="hits">8</span>
+          <li class="covered" data-hits="9" data-linenumber="6">
+            <span class="hits">9</span>
             
 
             
@@ -9180,7 +9235,7 @@
 
             
 
-            <code class="ruby">      click_on(&quot;new_post_from_nav&quot;)</code>
+            <code class="ruby">      click_link(&#39;new_post_from_nav&#39;)</code>
           </li>
         </div>
       
@@ -9235,7 +9290,7 @@
 
             
 
-            <code class="ruby">  describe &#39;creation&#39; do</code>
+            <code class="ruby">  describe &#39;delete&#39; do</code>
           </li>
         </div>
       
@@ -9246,40 +9301,40 @@
 
             
 
-            <code class="ruby">    before do</code>
+            <code class="ruby">    it &#39;can be deleted&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="33">
-            <span class="hits">3</span>
+          <li class="covered" data-hits="1" data-linenumber="33">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      visit new_post_path</code>
+            <code class="ruby">      @post = FactoryBot.create(:post)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="34">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="34">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    end</code>
+            
+
+            <code class="ruby">      visit posts_path</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="35">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="35">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">      click_button(&quot;delete_post_#{@post.id}_from_index&quot;)</code>
           </li>
         </div>
       
@@ -9290,7 +9345,7 @@
 
             
 
-            <code class="ruby">    it &#39;has a new form that can be reached&#39; do</code>
+            <code class="ruby">      accept_alert</code>
           </li>
         </div>
       
@@ -9301,7 +9356,7 @@
 
             
 
-            <code class="ruby">      expect(page).to have_content(&#39;New&#39;)</code>
+            <code class="ruby">      expect(page).not_to have_content(@post.rationale)</code>
           </li>
         </div>
       
@@ -9323,18 +9378,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="40">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="40">
+            
             
 
             
 
-            <code class="ruby">    it &#39;has a new form that can be reached&#39; do</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -9345,7 +9400,7 @@
 
             
 
-            <code class="ruby">      fill_in &#39;post[date]&#39;,	with: Date.today</code>
+            <code class="ruby">  describe &#39;creation&#39; do</code>
           </li>
         </div>
       
@@ -9356,18 +9411,18 @@
 
             
 
-            <code class="ruby">      fill_in &#39;post[rationale]&#39;,	with: &#39;Some Rational&#39;</code>
+            <code class="ruby">    before do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="43">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="3" data-linenumber="43">
+            <span class="hits">3</span>
             
 
             
 
-            <code class="ruby">      click_on &#39;Save&#39;</code>
+            <code class="ruby">      visit new_post_path</code>
           </li>
         </div>
       
@@ -9378,23 +9433,45 @@
 
             
 
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="45">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="45">
+          <li class="covered" data-hits="1" data-linenumber="46">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      expect(page).to have_content(&#39;Some Rational&#39;)</code>
+            <code class="ruby">    it &#39;has a new form that can be reached&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="46">
+          <li class="covered" data-hits="1" data-linenumber="47">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(page).to have_content(&#39;New&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="48">
             
             
 
@@ -9405,35 +9482,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="47">
+          <li class="never" data-hits="" data-linenumber="49">
             
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="48">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    it &#39;will have a user associated with it&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="49">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      fill_in &#39;post[date]&#39;,	with: Date.today</code>
           </li>
         </div>
       
@@ -9444,7 +9499,7 @@
 
             
 
-            <code class="ruby">      fill_in &#39;post[rationale]&#39;,	with: &#39;User Association&#39;</code>
+            <code class="ruby">    it &#39;has a new form that can be reached&#39; do</code>
           </li>
         </div>
       
@@ -9455,18 +9510,18 @@
 
             
 
-            <code class="ruby">      click_on &#39;Save&#39;</code>
+            <code class="ruby">      fill_in &#39;post[date]&#39;,	with: Date.today</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="52">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="52">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">      fill_in &#39;post[rationale]&#39;,	with: &#39;Some Rational&#39;</code>
           </li>
         </div>
       
@@ -9477,7 +9532,7 @@
 
             
 
-            <code class="ruby">      expect(User.last.posts.last.rationale).to eq(&#39;User Association&#39;)</code>
+            <code class="ruby">      click_on &#39;Save&#39;</code>
           </li>
         </div>
       
@@ -9488,18 +9543,18 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="55">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="55">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  end</code>
+            
+
+            <code class="ruby">      expect(page).to have_content(&#39;Some Rational&#39;)</code>
           </li>
         </div>
       
@@ -9510,40 +9565,40 @@
 
             
 
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="57">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="57">
+          <li class="covered" data-hits="1" data-linenumber="58">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  describe &#39;edit&#39; do</code>
+            <code class="ruby">    it &#39;will have a user associated with it&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="58">
-            <span class="hits">3</span>
+          <li class="covered" data-hits="1" data-linenumber="59">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    before { @post = FactoryBot.create(:post) }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="59">
-            
-            
-
-            
-
-            <code class="ruby"></code>
+            <code class="ruby">      fill_in &#39;post[date]&#39;,	with: Date.today</code>
           </li>
         </div>
       
@@ -9554,7 +9609,7 @@
 
             
 
-            <code class="ruby">    it &#39;can be reached by clicking edit on index page&#39; do</code>
+            <code class="ruby">      fill_in &#39;post[rationale]&#39;,	with: &#39;User Association&#39;</code>
           </li>
         </div>
       
@@ -9565,7 +9620,7 @@
 
             
 
-            <code class="ruby">      visit posts_path</code>
+            <code class="ruby">      click_on &#39;Save&#39;</code>
           </li>
         </div>
       
@@ -9587,18 +9642,18 @@
 
             
 
-            <code class="ruby">      click_on(&quot;edit_#{@post.id}&quot;)</code>
+            <code class="ruby">      expect(User.last.posts.last.rationale).to eq(&#39;User Association&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="64">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="64">
+            
             
 
             
 
-            <code class="ruby">      expect(page).to have_content(&#39;Edit Page&#39;)</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -9609,7 +9664,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -9631,18 +9686,18 @@
 
             
 
-            <code class="ruby">    it &#39;can be edited&#39; do</code>
+            <code class="ruby">  describe &#39;edit&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="68">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="3" data-linenumber="68">
+            <span class="hits">3</span>
             
 
             
 
-            <code class="ruby">      visit edit_post_path(@post)</code>
+            <code class="ruby">    before { @post = FactoryBot.create(:post) }</code>
           </li>
         </div>
       
@@ -9664,7 +9719,7 @@
 
             
 
-            <code class="ruby">      fill_in &#39;post[date]&#39;,	with: Date.today</code>
+            <code class="ruby">    it &#39;can be reached by clicking edit on index page&#39; do</code>
           </li>
         </div>
       
@@ -9675,23 +9730,12 @@
 
             
 
-            <code class="ruby">      fill_in &#39;post[rationale]&#39;,	with: &#39;Edited content&#39;</code>
+            <code class="ruby">      visit posts_path</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="72">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      click_on &#39;Save&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="73">
+          <li class="never" data-hits="" data-linenumber="72">
             
             
 
@@ -9702,13 +9746,24 @@
         </div>
       
         <div>
+          <li class="covered" data-hits="1" data-linenumber="73">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      click_on(&quot;edit_#{@post.id}&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
           <li class="covered" data-hits="1" data-linenumber="74">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      expect(page).to have_content(&#39;Edited content&#39;)</code>
+            <code class="ruby">      expect(page).to have_content(&#39;Edit Page&#39;)</code>
           </li>
         </div>
       
@@ -9730,12 +9785,122 @@
 
             
 
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="77">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &#39;can be edited&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="78">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      visit edit_post_path(@post)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="79">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="80">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      fill_in &#39;post[date]&#39;,	with: Date.today</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="81">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      fill_in &#39;post[rationale]&#39;,	with: &#39;Edited content&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="82">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      click_on &#39;Save&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="83">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="84">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(page).to have_content(&#39;Edited content&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="85">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="86">
+            
+            
+
+            
+
             <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="77">
+          <li class="never" data-hits="" data-linenumber="87">
             
             
 
